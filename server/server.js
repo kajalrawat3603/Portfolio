@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors({ origin: 'https://kajal-portfolio-h35tk1jt6-kajal-rawats-projects.vercel.app/' }));
+app.use(cors({ origin: 'https://kajal-portfolio-h35tk1jt6-kajal-rawats-projects.vercel.app' }));
 
 // Nodemailer setup
 const transporter = nodemailer.createTransport({
