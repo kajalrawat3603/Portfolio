@@ -28,6 +28,11 @@ const Contact = () => {
         body: JSON.stringify(formData)
       });
 
+      if (!response.ok) {
+        const errorMessage = await response.text();
+        throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorMessage}`);
+      }
+
       const result = await response.json();
       if (result.success) {
         alert('Email sent successfully!');
@@ -37,7 +42,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.error('Error:', error);
-      alert(error);
+      alert('An error occurred: ' + error.message);
     }
   };
 
