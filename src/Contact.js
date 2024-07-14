@@ -1,4 +1,3 @@
-// portfolio/src/Contact.js
 import React, { useState } from 'react';
 import './style.css';
 
@@ -32,7 +31,7 @@ const Contact = () => {
       const result = await response.json();
       if (result.success) {
         alert('Email sent successfully!');
-        setFormData({ name: '', email: '', message: '' }); // Clear form after successful submission
+        setFormData({ name: '', email: '', message: '' });
       } else {
         alert('Failed to send email.');
       }
@@ -59,7 +58,7 @@ const Contact = () => {
           </div>
           <div className="formGroup">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="Enter Your Email" value={formData.email} onChange={handleChange} required/>
+            <input type="email" id="email" placeholder="Enter Your Email" value={formData.email} onChange={handleChange} required />
           </div>
           <div className="formGroup">
             <label htmlFor="message">Message</label>
