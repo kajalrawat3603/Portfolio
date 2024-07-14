@@ -51,10 +51,18 @@ const Contact = () => {
       <h1 className="smallscreenaboutheading">LET'S CONNECT</h1>
       <div className="contactForm">
         <div className="contactlinks">
-          <a href="mailto:kajalrawat3603@gmail.com"><i className="icon_scroll fas fa-envelope fa-2x" style={{ color: 'black' }}></i></a>
-          <a href="https://linkedin.com"><i className="icon_scroll fab fa-linkedin fa-2x" style={{ color: 'black' }}></i></a>
-          <a href="https://linkedin.com/in/kajal-232004-rawat"><i className="icon_scroll fab fa-instagram fa-2x" style={{ color: 'black' }}></i></a>
-          <a href="https://wa.me/9548596972"><i className="icon_scroll fab fa-whatsapp fa-2x" style={{ color: 'black' }}></i></a>
+          <a href="mailto:kajalrawat3603@gmail.com">
+            <i className="icon_scroll fas fa-envelope fa-2x" style={{ color: 'black' }}></i>
+          </a>
+          <a href="https://linkedin.com">
+            <i className="icon_scroll fab fa-linkedin fa-2x" style={{ color: 'black' }}></i>
+          </a>
+          <a href="https://linkedin.com/in/kajal-232004-rawat">
+            <i className="icon_scroll fab fa-instagram fa-2x" style={{ color: 'black' }}></i>
+          </a>
+          <a href="https://wa.me/9548596972">
+            <i className="icon_scroll fab fa-whatsapp fa-2x" style={{ color: 'black' }}></i>
+          </a>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="formGroup">
