@@ -48,7 +48,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^8.2.2",
     "devicon-react-svg": "^0.2.4",
     "nodemon": "^3.1.4"
