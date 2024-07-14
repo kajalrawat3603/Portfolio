@@ -9,7 +9,16 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors({ origin: 'https://kajal-portfolio-h35tk1jt6-kajal-rawats-projects.vercel.app' }));
+const corsOptions = {
+  origin: [
+    'https://kajal-portfolio-h35tk1jt6-kajal-rawats-projects.vercel.app',
+    'https://kajal-portfolio-git-main-kajal-rawats-projects.vercel.app'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+};
+
+app.use(cors(corsOptions));
 
 // Nodemailer setup
 const transporter = nodemailer.createTransport({
