@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors({ origin: 'https://portfolio-nxkm.vercel.app' }));
+app.use(cors({ origin: 'https://portfolio-f78y.onrender.com' }));
 
 // Nodemailer setup
 const transporter = nodemailer.createTransport({
