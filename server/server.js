@@ -1,6 +1,5 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
 
@@ -8,7 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(bodyParser.json());
+app.use(express.json());
+
 const corsOptions = {
   origin: [
     'https://kajal-portfolio-h35tk1jt6-kajal-rawats-projects.vercel.app',
@@ -34,6 +34,13 @@ const transporter = nodemailer.createTransport({
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
+  // Log the request body to verify it
+  console.log('Received request body:', req.body);
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ success: false, message: 'Bad Request: Missing required fields' });
+  }
+
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
@@ -55,3 +62,4 @@ app.post('/send-email', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
