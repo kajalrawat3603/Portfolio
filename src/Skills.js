@@ -7,26 +7,22 @@ const Scroll = ({ isActive }) => {
     const elementsDisplayed = parseInt(getComputedStyle(root).getPropertyValue("--scroll-elements-displayed"));
     const scrollContent = document.querySelector(".scroll-content");
 
-    // Total number of elements in the scroll content
     const totalElements = scrollContent.children.length;
     root.style.setProperty("--scroll-elements", totalElements);
 
     if (isActive) {
-      // Clone elements to fill the viewport width seamlessly
       for (let i = 0; i < elementsDisplayed; i++) {
         scrollContent.appendChild(scrollContent.children[i].cloneNode(true));
       }
       scrollContent.classList.add('scroll-active');
     } else {
-      // Remove cloned elements and reset scroll state
       const originalChildren = Array.from(scrollContent.children).slice(0, totalElements);
-      scrollContent.innerHTML = ''; // Clear current content
+      scrollContent.innerHTML = '';
       originalChildren.forEach(child => scrollContent.appendChild(child));
       scrollContent.classList.remove('scroll-active');
     }
 
     return () => {
-      // Cleanup function to remove active class
       scrollContent.classList.remove('scroll-active');
     };
   }, [isActive]);

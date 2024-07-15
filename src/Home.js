@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 import { useEffect } from 'react';
 import { initializeScrollAnimations } from './script';
-import Signature from './sign';
 const Intro = () => {
   useEffect(() => {
     initializeScrollAnimations();
@@ -11,7 +10,7 @@ const Intro = () => {
   return (
     <>
     <section id="smallintro">
-    <div className="smallcontent odd" style={{ width: '500px' }}>
+    <div className="smallcontent odd" style={{ width: '500px' ,padding:'0 20px 30px 20px'}}>
               <div id="wrap" className='img-wrap'>
                 <img src="images/image.png" alt="Kajal Rawat" />
               </div>
@@ -30,6 +29,7 @@ const Intro = () => {
             </div>
     </section>
       <section id="intro">
+        <div style={{display:'flex',alignItems:'flex-end'}}>
           <div className="innercontainer odd">
             <div className="info">
               <div id="wrap" className='img-wrap'>
@@ -41,7 +41,8 @@ const Intro = () => {
               <h2 style={{ fontSize: 'x-large', marginBottom: '5px' }}>Computer Science & Engineering</h2>
             </div>
           </div>
-        
+        </div>
+        <div style={{display:'flex',alignItems:'flex-start'}}>
         <div className="content" style={{ width: '500px' }}>
           <h1>HELLO</h1>
           <h2>I'm Kajal Rawat.</h2>
@@ -52,6 +53,7 @@ const Intro = () => {
             <a href="https://leetcode.com/Kajal_rawat/"><i className="fas fa-code fa-2x" style={{ color: 'black' }}></i></a>
           </div>
           <a href="https://drive.google.com/file/d/1O-jxqVdzZrb0L8oosDiZnc7sEoG1rIC_/view?usp=drive_link"><button>RESUME</button></a>
+        </div>
         </div>
       </section>
     </>

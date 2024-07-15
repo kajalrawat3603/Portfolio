@@ -66,10 +66,10 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none; 
 }
+
 .pro,
 .edu,
 .aboutinfo {
-  opacity: 0;
   transition: opacity 1s ease;
 }
 
@@ -80,7 +80,6 @@ body {
   transition: ease-in-out 300ms;
   transform: scale(1.2);
 }
-
 
 .animate {
   opacity: 1;
@@ -309,6 +308,7 @@ a {
   transform: translateX(92%);
   box-shadow: -4px 0px 10px 0px rgba(240, 237, 237, 0.77);
   background-color: #2586b088;
+  padding: 20px;
 }
 
 .innercontainer::after {
@@ -833,8 +833,8 @@ textarea {
 }
 
 #more-arrows {
-  width: 2.5rem;
-  height: 4rem;
+  width: calc(10vh * 0.5);
+  height: calc(10vh * 0.5);
 }
 
 #more-arrows:hover polygon {
@@ -986,12 +986,14 @@ polygon.arrow-top {
   align-items: center;
   animation: scrolling var(--scroll-animation-duration) linear infinite;
 }
+
 .scroll-content i{
   mix-blend-mode: difference;
 }
+
 @keyframes scrolling {
   0% {
-    transform: translateX(0);
+    transform: translateX(90%);
   }
   100% {
     transform: translateX(calc(-1 * var(--scroll-element-width) * var(--scroll-elements)));
@@ -1014,6 +1016,11 @@ polygon.arrow-top {
   margin-top: 0.5rem;
   font-size: 1rem;
   color: white;
+  display: none;
+}
+
+.scroll-content li:hover .icon-caption {
+  display: block;
 }
 
 .scroll-content:hover {
@@ -1035,74 +1042,79 @@ polygon.arrow-top {
   ul {
     margin-right: 20px;
   }
+
   .navbar {
     height: fit-content;
+    background-color: #f2f3f4;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    max-height: 8rem;
   }
-
+  
   .logo {
     margin-left: 0;
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: inherit;
   }
   
-  .logo h1{
+  .logo h1 {
     margin: 20px 20px;
-    font-size: 8vh;
-    display: flex;
-    align-items: center;
+    font-size: calc(10vh * 0.6);
+    display: block;
   }
-
+  
   .nav-menu {
+    visibility:hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
-    padding-top:5rem ;
+    padding-top: 5rem;
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 13%;
-    right: -100%;
-    background-color: whitesmoke;
-    transition: all 0.5s ease;
-    z-index: 1;
+    position: fixed;
+    background-color: #f2f3f4;
   }
-
+  
   .nav-menu.active {
-    right: 0; 
+    z-index:7;
+    visibility: visible;
+    transition-delay: 0s;
   }
-
+  
   .nav-item {
     width: 100%;
     text-align: center;
-    margin: 0; 
+    margin: 0;
   }
-
+  
   .nav-links {
     padding: 1.5rem;
     display: block;
   }
-
+  
   .nav-icon {
     display: block;
-    top: 0;
-    right: 0;
     padding-right: 20px;
-    font-size: 1.5rem;
+    font-size: calc(10vh * 0.6);
     z-index: 4;
   }
-
-
-.menu {
-  display: flex;
-}
-
+  #menu-icon{
+    width: calc(9vh * 0.6);
+  }
+  .menu {
+    display: flex;
+  }
+  
   .text{
-    
     font-size: 1.5rem;
   }
 
@@ -1114,6 +1126,7 @@ polygon.arrow-top {
     display: flex;
     justify-content: center;
     background: linear-gradient(to right,#2586b088 50%, transparent 50%);
+    padding-top: 10rem;
   }
   
 

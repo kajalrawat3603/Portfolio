@@ -1,5 +1,8 @@
 import ScrollReveal from 'scrollreveal';
 export const initializeScrollAnimations = () => {
+  const isMobile = window.innerWidth <= 800; 
+
+  if (!isMobile) {
     const sr = ScrollReveal({
         distance: '60px',
         duration: 1500,
@@ -16,6 +19,8 @@ export const initializeScrollAnimations = () => {
       sr.reveal('.even', { delay: 20, origin: 'right' });
       sr.reveal('.top', { delay: 20, origin: 'top' });
       sr.reveal('.down', { delay: 10, origin: 'bottom' ,distance: '15px'});
+    }
+
     const options = {
       threshold: 0.2
     };
