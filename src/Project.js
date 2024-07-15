@@ -78,8 +78,8 @@ const Project = () => {
           <img src="images/OCR.png" alt="OCR-Optical Character Recognition" />
         </div>
 
-        {/* More button to toggle display of additional projects */}
-          <button className="more-button odd" onClick={openAllProjects} style={{float:'left'}}>More...</button>
+        <button className="more-button odd" onClick={openAllProjects} style={{float:'left'}}>More...</button>
+        
       </div>
 
       <div className="pop-up">

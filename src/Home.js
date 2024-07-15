@@ -46,7 +46,7 @@ const Intro = () => {
           <h1>HELLO</h1>
           <h2>I'm Kajal Rawat.</h2>
           <h3> Welcome to my portfolio! Explore my projects and discover how I leverage my passion for technology to create innovative solutions. Let's connect and explore the exciting possibilities together!</h3>
-          <div style={{ display: 'flex', gap: '50px', marginBottom: '20px' }}>
+          <div style={{ display: 'flex', gap: '50px', margin: '20px 0' }}>
             <a href="https://github.com/kajalrawat3603"><i className="fab fa-github fa-2x" style={{ color: 'black' }}></i></a>
             <a href="www.linkedin.com/in/kajal-232004-rawat"><i className="fab fa-linkedin fa-2x" style={{ color: 'black' }}></i></a>
             <a href="https://leetcode.com/Kajal_rawat/"><i className="fas fa-code fa-2x" style={{ color: 'black' }}></i></a>
