@@ -13,7 +13,8 @@ const corsOptions = {
   origin: [
     'https://kajal-portfolio-h35tk1jt6-kajal-rawats-projects.vercel.app',
     'https://kajal-portfolio-git-main-kajal-rawats-projects.vercel.app',
-    'https://portfolio-nxkm.vercel.app'
+    'https://portfolio-nxkm.vercel.app',
+    'https://kajal-portfolio-rawat.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type']
