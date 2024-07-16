@@ -6,7 +6,10 @@ const AllProjects = () => {
     if (video) {
       video.src = src;
       const popUp = document.querySelector('.pop-up');
-      if (popUp) popUp.style.display = 'block';
+      if (popUp){
+        popUp.style.display = 'flex';
+        popUp.style.justifyContent = 'center';
+      } 
     }
   };
 
