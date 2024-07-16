@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './style.css';
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const [buttonText, setButtonText] = useState('Connect');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +20,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
+    setButtonText('Sending...');
     try {
       const response = await fetch('https://portfolio-f78y.onrender.com/send-email', {
         method: 'POST',
@@ -27,23 +30,31 @@ const Contact = () => {
         },
         body: JSON.stringify(formData)
       });
-
+      const result = await response.json();
       if (!response.ok) {
         const errorMessage = await response.text();
         throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorMessage}`);
       }
 
       const result = await response.json();
-      if (result.success) {
-        alert('Email sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        alert('Failed to send email.');
+        if (result.success) {
+          setButtonText('Sent');
+          setFormData({ name: '', email: '', message: '' }); 
+        } 
+        else {
+          setButtonText('Failed to send');
+        }
+      } 
+      catch (error) {
+        console.error('Error:', error);
+        setButtonText('An error occurred');
+      } 
+      finally {
+        setTimeout(() => {
+          setButtonText('Connect');
+          setLoading(false);
+        }, 2000);
       }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred: ' + error.message);
-    }
   };
 
   return (
@@ -77,14 +88,17 @@ const Contact = () => {
             <label htmlFor="message">Message</label>
             <textarea placeholder="Type Message..." id="message" name="message" rows="4" value={formData.message} onChange={handleChange} required></textarea>
           </div>
-          <button className="submitButton" type="submit">Connect</button>
+          <div className={loading ? 'box' : ''} style={{ display: 'flex', width: 'fit-content' }}>
+            <button className={`submitButton`} type="submit">
+              {buttonText}
+            </button>
+          </div>
         </form>
       </div>
       <div className="connectHeading">
         <h1 style={{ fontSize: '8.8vw', margin: '0', padding: '0' }}>LET'S </h1>
         <h1 style={{ fontSize: '8.8vw', margin: '0', textDecoration: 'underline' }}>CONNECT!</h1>
       </div>
-      <a href="#" id="scrollToTopButton" title="Go to top">&#8593;</a>
     </section>
   );
 };
