@@ -30,11 +30,6 @@ const Contact = () => {
         },
         body: JSON.stringify(formData)
       });
-      const result = await response.json();
-      if (!response.ok) {
-        const errorMessage = await response.text();
-        throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorMessage}`);
-      }
 
       const result = await response.json();
         if (result.success) {
