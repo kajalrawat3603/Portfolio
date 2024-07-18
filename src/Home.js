@@ -25,7 +25,7 @@ const Intro = () => {
               <h2 style={{ fontSize: 'x-large' }}>Bachelor's of Technology</h2>
               <h2 style={{ fontSize: 'x-large' }}>Computer Science & Engineering</h2>
               <h3> Welcome to my portfolio! Explore my projects and discover how I leverage my passion for technology to create innovative solutions.</h3>
-              <a href="https://drive.google.com/file/d/1Pc7DPECGbvvrfEgFC6J-9KU4q9kcXkyy/view?usp=drive_link"><button>RESUME</button></a>
+              <a href="https://drive.google.com/file/d/1ByE_xANd6arMPa2PUjwUdbOvHWZlCIrO/view?usp=sharing"><button>RESUME</button></a>
             </div>
     </section>
       <section id="intro">
