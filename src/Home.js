@@ -25,7 +25,7 @@ const Intro = () => {
               <h2 style={{ fontSize: 'x-large' }}>Bachelor's of Technology</h2>
               <h2 style={{ fontSize: 'x-large' }}>Computer Science & Engineering</h2>
               <h3> Welcome to my portfolio! Explore my projects and discover how I leverage my passion for technology to create innovative solutions.</h3>
-              <a href="https://drive.google.com/file/d/1a_nNL-sBodhzx7V_wPWBq4F8QI2AupUL/view?usp=sharing"><button>RESUME</button></a>
+              <a href="https://drive.google.com/file/d/1LWD6addLrzqB1U2hqMfQm2C5lkRkoAJp/view?usp=sharing"><button>RESUME</button></a>
             </div>
     </section>
       <section id="intro">
@@ -52,7 +52,7 @@ const Intro = () => {
             <a href="www.linkedin.com/in/kajal-232004-rawat"><i className="fab fa-linkedin fa-2x" style={{ color: 'black' }}></i></a>
             <a href="https://leetcode.com/Kajal_rawat/"><i className="fas fa-code fa-2x" style={{ color: 'black' }}></i></a>
           </div>
-          <a href="https://drive.google.com/file/d/1a_nNL-sBodhzx7V_wPWBq4F8QI2AupUL/view?usp=sharing"><button>RESUME</button></a>
+          <a href="https://drive.google.com/file/d/1LWD6addLrzqB1U2hqMfQm2C5lkRkoAJp/view?usp=sharing"><button>RESUME</button></a>
         </div>
         </div>
       </section>
