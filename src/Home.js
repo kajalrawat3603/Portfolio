@@ -52,7 +52,7 @@ const Intro = () => {
             <a href="www.linkedin.com/in/kajal-232004-rawat"><i className="fab fa-linkedin fa-2x" style={{ color: 'black' }}></i></a>
             <a href="https://leetcode.com/Kajal_rawat/"><i className="fas fa-code fa-2x" style={{ color: 'black' }}></i></a>
           </div>
-          <a href="https://drive.google.com/file/d/1ByE_xANd6arMPa2PUjwUdbOvHWZlCIrO/view?usp=sharing"><button>RESUME</button></a>
+          <a href="https://drive.google.com/file/d/1a_nNL-sBodhzx7V_wPWBq4F8QI2AupUL/view?usp=sharing"><button>RESUME</button></a>
         </div>
         </div>
       </section>
