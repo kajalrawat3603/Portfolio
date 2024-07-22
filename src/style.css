@@ -1415,7 +1415,7 @@ polygon.arrow-top {
   }
 
   #Allproject .card:hover h2 {
-    inset: auto auto 90% 30px;
+    inset: auto auto 85% 30px;
     transition: inset 0.3s ease-out;
   }
 
