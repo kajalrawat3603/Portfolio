@@ -57,18 +57,10 @@ const Contact = () => {
       <h1 className="smallscreenaboutheading">LET'S CONNECT</h1>
       <div className="contactForm">
         <div className="contactlinks">
-          <a href="mailto:kajalrawat3603@gmail.com">
-            <i className="icon_scroll fas fa-envelope fa-2x" style={{ color: 'black' }}></i>
-          </a>
-          <a href="https://linkedin.com">
-            <i className="icon_scroll fab fa-linkedin fa-2x" style={{ color: 'black' }}></i>
-          </a>
-          <a href="https://linkedin.com/in/kajal-232004-rawat">
-            <i className="icon_scroll fab fa-instagram fa-2x" style={{ color: 'black' }}></i>
-          </a>
-          <a href="https://wa.me/9548596972">
-            <i className="icon_scroll fab fa-whatsapp fa-2x" style={{ color: 'black' }}></i>
-          </a>
+          <a href="mailto:kajalrawat3603@gmail.com"><i className="icon_scroll fas fa-envelope fa-2x" style={{ color: 'black' }}></i></a>
+          <a href="https://linkedin.com"><i className="icon_scroll fab fa-linkedin fa-2x" style={{ color: 'black' }}></i></a>
+          <a href="https://linkedin.com/in/kajal-232004-rawat"><i className="icon_scroll fab fa-instagram fa-2x" style={{ color: 'black' }}></i></a>
+          <a href="https://wa.me/9548596972"><i className="icon_scroll fab fa-whatsapp fa-2x" style={{ color: 'black' }}></i></a>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="formGroup">
@@ -81,11 +73,11 @@ const Contact = () => {
           </div>
           <div className="formGroup">
             <label htmlFor="message">Message</label>
-            <textarea placeholder="Type Message..." id="message" name="message" rows="4" value={formData.message} onChange={handleChange} required></textarea>
+            <input placeholder="Type Message..." id="message" name="message" rows="4" value={formData.message} onChange={handleChange} required></input>
           </div>
           <div className={loading ? 'box' : ''} style={{ display: 'flex', width: 'fit-content' }}>
-            <button className={`submitButton`} type="submit">
-              {buttonText}
+            <button type="submit">
+              {buttonText}<div className='light'></div>
             </button>
           </div>
         </form>
