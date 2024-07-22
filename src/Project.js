@@ -32,56 +32,113 @@ const Project = () => {
   };
 
   return (
-    <><h1 className='smallscreenaboutheading'>PROJECTS</h1>
+    <>
+    <h1 className='smallscreenaboutheading'>PROJECTS</h1>
     <section id="project">
       <h1 className="vertical-text">PROJECTS</h1>
       <div className="projectinfo">
-        <div className="pro even">
-          <div className="desc">
-            <h2>E-Commerce Website</h2>
-            <p>Designed and implemented a secure website with user login, registration, and access control for private information.</p>
-            <p>Utilized front-end technologies (HTML, CSS, JavaScript) for a user-friendly interface and back-end tools (Node.js, Express.js, MongoDB) for efficient data processing.</p>
-            <p>Implemented JWT for secure user authentication and Nodemailer for confirmation emails.</p>
-            <button className="demo-button" onClick={() => openDemo("images/E-commerce-website-demo.mp4")}>Demo</button>
-            <a href="https://github.com/kajalrawat3603/E-Commerce-Website-Project"><button>Repository</button></a>
+      <div className='pro odd'>
+      <div className="card">
+        <img 
+          src="images\symptomai.png" 
+          alt="Card Image" 
+        />
+        <div className="card-content">
+          <h2 className='ch2'>SymptomAI</h2>
+          <div  className='a1 white' style={{display:'flex', flexDirection:'column'}}>
+          <p>This web application helps users to predict potential diseases based on symptoms they input. It utilizes machine learning models to make predictions for diabetes, heart disease, and Parkinson's disease. Additionally, users can sign up, log in, and provide symptoms for diagnosis.</p>
+            <div style={{display:'flex'}}>
+            <a href="https://symptomai.onrender.com">
+              <button>Demo
+                <div className='light'></div>
+              </button>
+            </a>
+            <a href="https://github.com/kajalrawat3603/SymptomAI">
+              <button>Repository
+                <div className='light'></div>
+              </button>
+            </a>
+            </div>
           </div>
-          <img src="images/e.jpg" alt="E-Commerce Website" />
         </div>
-
-        <div className="pro odd">
-          <div className="desc">
-            <h2>Image Security</h2>
-            <p>Developed user-friendly interface for secure image data transmission using AES encryption.</p>
-            <p>Implemented image pre-processing, encryption, and decryption algorithms.</p>
-            <button className="demo-button" onClick={() => openDemo("images/coming soon.mp4")}>Demo</button>
-            <a href="https://github.com/kajalrawat3603/Image-Security-using-Encryption"><button>Repository</button></a>
+      </div>
+      </div>
+      <div className='pro even'>
+      <div className="card even">
+        <img 
+          src="images\encryptify.png" 
+          alt="Card Image" 
+        />
+        <div className="card-content">
+          <h2>Encryptify</h2>
+          <div  className='a1 white' style={{display:'flex', flexDirection:'column'}}>
+          <p>This web application helps users to predict potential diseases based on symptoms they input. It utilizes machine learning models to make predictions for diabetes, heart disease, and Parkinson's disease. Additionally, users can sign up, log in, and provide symptoms for diagnosis.</p>
+            <div style={{display:'flex'}}>
+            <a href="https://encryptify.onrender.com">
+              <button>Demo
+                <div className='light'></div>
+              </button>
+            </a>
+            <a href="https://github.com/kajalrawat3603/Encryptify">
+              <button>Repository
+                <div className='light'></div>
+              </button>
+            </a>
+            </div>
           </div>
-          <img src="images/image_security.png" alt="Image Security" />
         </div>
-
-        <div className="pro even" >
-          <div className="desc">
-            <h2>Health Notifier</h2>
-            <p>Developed a Health Notifier system leveraging SVM algorithms to predict diabetes, heart disease, and Parkinson's disease risks by analyzing user health reports and lifestyle data</p>
-            <p>Ensured robust data security measures and user privacy protection through encryption techniques, access controls, and compliance with privacy regulations.</p>
-            <p>Designed an intuitive user interface using Streamlit for personalized alerts, emphasizing transparency, ethical data handling, and user consent in the project implementation.</p>
-            <button className="demo-button" onClick={() => openDemo("images/coming soon.mp4")}>Demo</button>
-            <a href="https://github.com/kajalrawat3603/Health-Notifier"><button>Repository</button></a>
+      </div>
+      </div>
+      <div className='pro odd'>
+      <div className="card odd">
+        <img 
+          src="images/e.jpg" 
+          alt="E-Commerce Website" 
+        />
+        <div className="card-content">
+          <h2>E-Commerce Website</h2>
+          <div  className='a1 white' style={{display:'flex', flexDirection:'column'}}>
+          <p>Designed and implemented a secure website with user login, registration, and access control for private information. Utilized HTML, CSS, and JavaScript for a user-friendly interface and Node.js, Express.js, and MongoDB for efficient data processing. Integrated JWT for secure authentication and Nodemailer for confirmation emails..</p>
+            <div style={{display:'flex'}}>
+            
+            <button className="demo-button" onClick={() => openDemo("images/E-commerce-website-demo.mp4")}>Demo<div className='light'></div></button>
+          
+            <a href="https://github.com/kajalrawat3603/E-Commerce-Website-Project">
+              <button>Repository
+                <div className='light'></div>
+              </button>
+            </a>
+            </div>
           </div>
-          <img src="images/healthnotifier.jpg" alt="Health Notifier" />
         </div>
-
-        <div className="pro odd">
-          <div className="desc">
-            <h2>OCR-Optical Character Recognition to Text And Audio</h2>
-            <p>Developed Flask-based app with PyTesseract for text extraction from images, PyMuPDF for PDF text extraction and Google Translate API for translation. Features include file handling and gTTS for audio.</p>
-            <button className="demo-button" onClick={() => openDemo("images/coming soon.mp4")}>Demo</button>
-            <a href="https://github.com/kajalrawat3603/OCR-Optical-Character-Recognition-to-Text-And-Audio"><button>Repository</button></a>
+      </div>
+      </div>
+      <div className='pro odd'>
+      <div className="card even">
+        <img 
+          src="images/OCR.png" 
+          alt="OCR-Optical Character Recognition" 
+        />
+        <div className="card-content">
+          <h2>OCR-Optical Character Recognition to Text And Audio</h2>
+          <div  className='a1 white' style={{display:'flex', flexDirection:'column'}}>
+          <p>This Flask-based application extracts text from images using PyTesseract and from PDFs using PyMuPDF. It also translates text via the Google Translate API and generates audio using gTTS. The app supports file handling, user authentication, and provides comprehensive text processing features.</p>
+            <div style={{display:'flex'}}>
+            
+            <button className="demo-button" onClick={() => openDemo("images/coming soon.mp4")}>Demo<div className='light'></div></button>
+         
+            <a href="https://github.com/kajalrawat3603/OCR-Optical-Character-Recognition-to-Text-And-Audio">
+              <button>Repository
+                <div className='light'></div>
+              </button>
+            </a>
+            </div>
           </div>
-          <img src="images/OCR.png" alt="OCR-Optical Character Recognition" />
         </div>
-
-        <button className="more-button odd" onClick={openAllProjects} style={{float:'left'}}>More...</button>
+      </div>
+      </div>
+      
+        <button className="more-button odd" onClick={openAllProjects} style={{float:'left'}}>More...<div className='light'></div></button>
         
       </div>
 

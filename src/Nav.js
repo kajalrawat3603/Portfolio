@@ -8,7 +8,7 @@ const Navbar = () => {
   const closeMenu = () => setClick(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar top">
       <div className="logo">
         <a href="/index.html"><h1>Kajal Rawat</h1></a>
       </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1LWD6addLrzqB1U2hqMfQm2C5lkRkoAJp/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Pc7DPECGbvvrfEgFC6J-9KU4q9kcXkyy/view?usp=drive_link"
             className="link"
             target="_blank"
             rel="noopener noreferrer"

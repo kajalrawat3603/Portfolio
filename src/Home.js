@@ -25,12 +25,15 @@ const Intro = () => {
               <h2 style={{ fontSize: 'x-large' }}>Bachelor's of Technology</h2>
               <h2 style={{ fontSize: 'x-large' }}>Computer Science & Engineering</h2>
               <h3> Welcome to my portfolio! Explore my projects and discover how I leverage my passion for technology to create innovative solutions.</h3>
-              <a href="https://drive.google.com/file/d/1LWD6addLrzqB1U2hqMfQm2C5lkRkoAJp/view?usp=sharing"><button>RESUME</button></a>
+              <a href="https://drive.google.com/file/d/1Pc7DPECGbvvrfEgFC6J-9KU4q9kcXkyy/view?usp=drive_link" >
+  <button>RESUME<div className='light'></div></button>
+</a>
+
             </div>
     </section>
       <section id="intro">
-        <div style={{display:'flex',alignItems:'flex-end'}}>
-          <div className="innercontainer odd">
+        <div className="outercontainer" >
+          <div className="innercontainer">
             <div className="info">
               <div id="wrap" className='img-wrap'>
                 <img src="images/image.png" alt="Kajal Rawat" />
@@ -42,7 +45,7 @@ const Intro = () => {
             </div>
           </div>
         </div>
-        <div style={{display:'flex',alignItems:'flex-start'}}>
+        <div style={{display:'flex',alignItems:'flex-start',justifyContent:'flex-start'}}>
         <div className="content" style={{ width: '500px' }}>
           <h1>HELLO</h1>
           <h2>I'm Kajal Rawat.</h2>
@@ -52,7 +55,8 @@ const Intro = () => {
             <a href="www.linkedin.com/in/kajal-232004-rawat"><i className="fab fa-linkedin fa-2x" style={{ color: 'black' }}></i></a>
             <a href="https://leetcode.com/Kajal_rawat/"><i className="fas fa-code fa-2x" style={{ color: 'black' }}></i></a>
           </div>
-          <a href="https://drive.google.com/file/d/1LWD6addLrzqB1U2hqMfQm2C5lkRkoAJp/view?usp=sharing"><button>RESUME</button></a>
+          <a href="https://drive.google.com/file/d/1O-jxqVdzZrb0L8oosDiZnc7sEoG1rIC_/view?usp=drive_link"><button>RESUME
+            <div className='light'></div></button></a>
         </div>
         </div>
       </section>

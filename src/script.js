@@ -12,9 +12,9 @@ export const initializeScrollAnimations = () => {
       sr.reveal('.contactForm', { delay: 100, origin: 'top', interval: 200 });
       sr.reveal('.connectHeading', { delay: 100, origin: 'bottom', interval: 100, distance: '10px' });
       sr.reveal('.icon_scroll', { delay: 300, origin: 'bottom', interval: 100, distance: '10px' });
-      sr.reveal('.outercontainer', { delay: 0, origin: 'left' });
-      sr.reveal('.content', { delay: 0, origin: 'right' });
-      sr.reveal('.about_heading', { delay: 0, origin: 'right' });
+      sr.reveal('.outercontainer', { delay: 20, origin: 'left' });
+      sr.reveal('.content', { delay: 20, origin: 'right' });
+      sr.reveal('.about_heading', { delay: 20, origin: 'right' });
       sr.reveal('.odd', { delay: 20, origin: 'left' });
       sr.reveal('.even', { delay: 20, origin: 'right' });
       sr.reveal('.top', { delay: 20, origin: 'top' });
