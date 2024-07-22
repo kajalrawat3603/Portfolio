@@ -981,7 +981,6 @@ textarea {
 #Allproject .projectinfo .pro {
   width: 600px;
   min-width: 500px;
-  height: 400px;
   opacity: 2;
 }
 
@@ -1387,9 +1386,11 @@ polygon.arrow-top {
     display: none;
   }
 
+  #Allproject .projectinfo .pro ,
   .pro {
     min-width: 90vw;
     padding: auto;
+    margin: 20px 20px;
   }
 
 
