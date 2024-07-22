@@ -652,7 +652,7 @@ h3 {
 }
 
 .card h2 {
-  text-align: end;
+  text-align: start;
   position: absolute;
   inset: auto auto 30px 30px;
   margin: 0;
