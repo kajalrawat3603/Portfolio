@@ -1327,7 +1327,7 @@ polygon.arrow-top {
   #smallintro {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, #2586b088 50%, transparent 50%);
+    background: linear-gradient(to right, #1c8da7, #0e5869 50%, transparent 50%);
     padding-top: 6rem;
   }
 
