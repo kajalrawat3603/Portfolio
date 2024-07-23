@@ -44,8 +44,9 @@ app.post('/send-email', (req, res) => {
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
-    subject: `New message from ${name}`,
-    text: message
+    subject: `${name} Wants to Connect`,
+    text: message,
+    replyTo: email
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
