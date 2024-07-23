@@ -814,9 +814,8 @@ h3 {
 }
 
 .edu img {
-  width: 60%;
+  width: 20vw;
   overflow: hidden;
-  height: 90%;
   float: right;
 }
 
@@ -1012,8 +1011,8 @@ textarea {
 }
 
 #more-arrows {
-  width: calc(10vh * 0.3);
-  height: calc(10vh * 0.5);
+  width: 30px;
+  height: 45px;
 }
 
 #more-arrows:hover polygon {
@@ -1275,7 +1274,7 @@ polygon.arrow-top {
     gap: 3rem;
     padding-top: 5rem;
     width: 100%;
-    height: 100%;
+    height: 1000vw;
     top: 5rem;
     position: fixed;
     background-color: rgb(245 244 248);
@@ -1372,6 +1371,11 @@ polygon.arrow-top {
     flex-direction: column;
     align-items: center;
     border-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .edu{
+    width: 70%;
   }
 
   .grid-item {
@@ -1490,5 +1494,8 @@ polygon.arrow-top {
   .card p,
   .a1 {
     font-size: medium;
+  }
+  .edu{
+    width: 100%;
   }
 }

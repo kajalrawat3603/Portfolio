@@ -16,7 +16,7 @@ const Edu = () => {
         </div>
         <img src='images/kvs.png'></img>
       </div>
-      <div className="edu grid-item down">
+      <div className="edu down">
         <div className="desc">
           <h2>Higher Secondary School (12th)</h2>
           <h1 style={{ marginBottom: 0 }}>Kendriya Vidyalaya Indian Military Academy Dehradun</h1>
@@ -25,7 +25,7 @@ const Edu = () => {
         </div>
         <img src='images/kvs.png'></img>
       </div>
-      <div className="edu grid-item top">
+      <div className="edu top">
         <div className="desc">
           <h2>Bachelor of Technology (CSE)</h2>
           <h1 style={{ marginBottom: 0 }}>Graphic Era Hill University Dehradun Campus</h1>
