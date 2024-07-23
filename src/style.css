@@ -4,9 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  /*cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FCFCFC" d="M22 11c-4.96 0-9-4.04-9-9 0-1.32-2-1.32-2 0 0 4.96-4.04 9-9 9-1.32 0-1.32 2 0 2 4.96 0 9 4.04 9 9 0 1.32 2 1.32 2 0 0-4.96 4.04-9 9-9 1.32 0 1.32-2 0-2Z"></path></svg>') 8 8, auto;*/
 }
-
 body {
   background: rgba(255, 240, 245, 0.74);
   margin: 0;
@@ -1399,19 +1397,10 @@ polygon.arrow-top {
     margin: 2px;
   }
 
-
   .card .a1 {
     padding: 2%;
   }
 
-  #Allproject .card .a1{
-    height: 80%;
-  }
-
-  #Allproject .card:hover h2 {
-    inset: auto auto 85% 30px;
-    transition: inset 0.3s ease-out;
-  }
 
   .pop-up {
     align-items: center;
