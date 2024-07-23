@@ -1011,7 +1011,7 @@ textarea {
 
 #more-arrows {
   width: 30px;
-  height: 5vw;
+  height: max-content;
 }
 
 #more-arrows:hover polygon {
