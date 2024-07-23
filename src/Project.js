@@ -104,7 +104,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className='pro odd'>
+          <div className='pro even'>
             <div className="card even" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)}>
               <img src="images/OCR.png" alt="OCR-Optical Character Recognition" />
               <div className="card-content">
