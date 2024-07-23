@@ -1000,7 +1000,7 @@ textarea {
 
 #more-arrows {
   width: 30px;
-  height: 45px;
+  height: max-content;
 }
 
 #more-arrows:hover polygon {
@@ -1338,6 +1338,7 @@ polygon.arrow-top {
 
   #about {
     grid-template-columns: 1fr;
+    padding:0px 20px 0px 20px;
   }
 
   .aboutinfo {
