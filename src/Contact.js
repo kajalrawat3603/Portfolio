@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
           <div className="formGroup">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="Enter Your Email" value={formData.email} onChange={handleChange} required />
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" value={formData.email} onChange={handleChange} required />
           </div>
           <div className="formGroup">
             <label htmlFor="message">Message</label>
