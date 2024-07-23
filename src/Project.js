@@ -34,7 +34,7 @@ const Project = () => {
 
   const handleMouseEnter = (index) => {
     const h2Element = document.querySelectorAll('.card h2')[index];
-    const a1Height = a1Refs.current[index].offsetHeight;
+    const a1Height = a1Refs.current[index].offsetHeight+5;
     h2Element.style.inset = `auto auto ${a1Height}px 30px`;
   };
 
@@ -104,7 +104,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className='pro even'>
+          <div className='pro odd'>
             <div className="card even" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={() => handleMouseLeave(3)}>
               <img src="images/OCR.png" alt="OCR-Optical Character Recognition" />
               <div className="card-content">

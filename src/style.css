@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  /*cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FCFCFC" d="M22 11c-4.96 0-9-4.04-9-9 0-1.32-2-1.32-2 0 0 4.96-4.04 9-9 9-1.32 0-1.32 2 0 2 4.96 0 9 4.04 9 9 0 1.32 2 1.32 2 0 0-4.96 4.04-9 9-9 1.32 0 1.32-2 0-2Z"></path></svg>') 8 8, auto;*/
 }
 
 body {
@@ -663,7 +664,6 @@ h3 {
   display: block;
 }
 
-
 .card .a1 {
   position: absolute;
   opacity: 0;
@@ -679,10 +679,6 @@ h3 {
   font-weight: 0;
 }
 
-#Allproject .card .a1{
-  height: 80%;
-}
-
 .white {
   color: inherit;
   text-decoration: none;
@@ -691,12 +687,6 @@ h3 {
 }
 
 .card:hover h2 {
-  inset: auto auto 16vw 30px;
-  transition: inset 0.3s ease-out;
-}
-
-#allproject .card:hover h2 {
-  inset: auto auto 100vw 30px;
   transition: inset 0.3s ease-out;
 }
 
@@ -715,6 +705,7 @@ h3 {
 .material-symbols-outlined {
   vertical-align: middle;
 }
+
 
 .pro {
   width: fit-content;
@@ -1011,7 +1002,7 @@ textarea {
 
 #more-arrows {
   width: 30px;
-  height: max-content;
+  height: 45px;
 }
 
 #more-arrows:hover polygon {
@@ -1349,7 +1340,6 @@ polygon.arrow-top {
 
   #about {
     grid-template-columns: 1fr;
-    padding: 0px 20px 0px 20px;
   }
 
   .aboutinfo {
