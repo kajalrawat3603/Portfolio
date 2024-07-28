@@ -29,8 +29,6 @@ const Navbar = () => {
           <a
             href="https://drive.google.com/file/d/14B3jkMl9T3MdWTVWlNYnVtZyQ4uFOsoW/view?usp=sharing"
             className="link"
-            target="_blank"
-            rel="noopener noreferrer"
             onClick={closeMenu}
           >
             <div className="text">RESUME</div>
