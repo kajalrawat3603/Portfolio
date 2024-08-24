@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background: rgba(255, 240, 245, 0.74);
   margin: 0;
@@ -397,7 +398,8 @@ a {
 .innercontainer {
   border: 1px solid rgba(255, 255, 255, 0.13);
   background-color: #1c8da7;
-  background: linear-gradient(to right, #1c8da7, #356e86, #0e5869);
+  background: linear-gradient(to right, #1c8da7, #2586b0, #0e5869);
+  
   border-radius: 0.7rem;
   backdrop-filter: blur(7px);
   overflow: hidden;
@@ -543,7 +545,6 @@ h3 {
   font-weight: 500;
   font-style: normal;
 }
-
 
 #about {
   display: grid;
@@ -697,7 +698,7 @@ h3 {
 .card:hover img {
   transition: opacity 0.3s ease-in;
   opacity: 1;
-  filter: grayscale(100%);
+  filter: blur(3px);
 }
 
 .material-symbols-outlined {
@@ -1000,7 +1001,7 @@ textarea {
 
 #more-arrows {
   width: 30px;
-  height: max-content;
+  height: 45px;
 }
 
 #more-arrows:hover polygon {
@@ -1048,7 +1049,24 @@ polygon.arrow-top {
   animation: dash 2.5s ease-in-out forwards;
 }
 
+::-webkit-scrollbar {
+  width:13px;
+}
 
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1c8da7;
+  border-radius: 50px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
 
 @keyframes dash {
   100% {
@@ -1338,7 +1356,6 @@ polygon.arrow-top {
 
   #about {
     grid-template-columns: 1fr;
-    padding:0px 20px 0px 20px;
   }
 
   .aboutinfo {
@@ -1398,10 +1415,10 @@ polygon.arrow-top {
     margin: 2px;
   }
 
+
   .card .a1 {
     padding: 2%;
   }
-
 
   .pop-up {
     align-items: center;
