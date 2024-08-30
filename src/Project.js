@@ -89,7 +89,7 @@ const Project = () => {
           </div>
           <div className='pro odd'>
             <div className="card odd" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={() => handleMouseLeave(2)}>
-              <img src="images/e.jpg" alt="E-Commerce Website" />
+              <img src="images/e-commerce-website.png" alt="E-Commerce Website" />
               <div className="card-content">
                 <h2>E-Commerce Website</h2>
                 <div className='a1 white' ref={(el) => a1Refs.current[2] = el} style={{ display: 'flex', flexDirection: 'column' }}>
