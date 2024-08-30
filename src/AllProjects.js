@@ -139,9 +139,11 @@ const AllProjects = () => {
                 E-Commerce Website
               </h2>
               <div className='a1 white' ref={(el) => (a1Refs.current[3] = el)} style={{ display: 'flex', flexDirection: 'column' }}>
-                <p>Designed and implemented a secure website with user login, registration, and access control for private information. Utilized HTML, CSS, and JavaScript for a user-friendly interface and Node.js, Express.js, and MongoDB for efficient data processing. Integrated JWT for secure authentication and Nodemailer for confirmation emails.</p>
-                <div style={{ display: 'flex' }}>
-                  <button className="demo-button" onClick={() => openDemo("images/E-commerce-website-demo.mp4")}>Demo<div className='light'></div></button>
+                <p>This is a full-stack e-commerce web application built with React and Node.js. The application allows users to browse products, add them to a cart, and manage their orders. The project includes user authentication, product management, cart functionality, and blog submission features.</p>
+                  <div style={{ display: 'flex' }}>
+                  <a href="https://kr-e-commerce.vercel.app">
+                    <button className="demo-button">Demo<div className='light'></div></button>
+                  </a>
                   <a href="https://github.com/kajalrawat3603/E-Commerce-Website-Project">
                     <button>Repository<div className='light'></div></button>
                   </a>
