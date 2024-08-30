@@ -129,7 +129,7 @@ const AllProjects = () => {
           onMouseLeave={handleMouseLeave}
         >
           <div className="card odd">
-            <img src="images/e.jpg" alt="E-Commerce Website" />
+            <img src="images/e-commerce-website.png" alt="E-Commerce Website" />
             <div className="card-content">
               <h2
                 style={{
