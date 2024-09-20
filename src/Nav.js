@@ -27,7 +27,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/14B3jkMl9T3MdWTVWlNYnVtZyQ4uFOsoW/view?usp=sharing"
+            href="https://drive.google.com/file/d/1MCR-3GZ729aOEohHxEFqEZJbMuUgMBIa/view?usp=sharing"
             className="link"
             onClick={closeMenu}
           >
